@@ -77,7 +77,7 @@ class AccessControlRuleAssociationManager extends FOGManagerController
         }
         return false;
     }
-    
+
     public function uninstall()
     {
         return parent::uninstall();

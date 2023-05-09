@@ -311,19 +311,19 @@ class SubnetgroupManagementPage extends FOGPage
         $subnets = filter_input(
             INPUT_POST,
             'subnets'
-        ) ? : $this->obj->get('subnets');
+        ) ?: $this->obj->get('subnets');
 
         $group = filter_input(
             INPUT_POST,
             'group'
-        ) ? : $this->obj->get('groupID');
+        ) ?: $this->obj->get('groupID');
         $grbuild = self::getClass('GroupManager')->buildSelectBox(
             $group
         );
         $name = filter_input(
             INPUT_POST,
             'name'
-        ) ? : $this->obj->get('name');
+        ) ?: $this->obj->get('name');
 
 
         $this->title = _('SubnetGroup General');
@@ -485,9 +485,9 @@ class SubnetgroupManagementPage extends FOGPage
         global $tab;
         try {
             switch ($tab) {
-            case 'subnetgroup-general':
-                $this->subnetgroupGeneralPost();
-                break;
+                case 'subnetgroup-general':
+                    $this->subnetgroupGeneralPost();
+                    break;
             }
             if (!$this->obj->save()) {
                 throw new Exception(_('Subnetgroup update failed!'));

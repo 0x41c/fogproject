@@ -42,7 +42,7 @@ if (isset($_POST['url'])) {
         echo $response;
         unset($response);
     }
-    
+
     exit;
 }
 

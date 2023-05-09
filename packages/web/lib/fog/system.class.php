@@ -23,7 +23,7 @@
  */
 class System
 {
-    const PHP_REQUIRED = '5.6.0';
+    public const PHP_REQUIRED = '5.6.0';
     /**
      * Checks the php version against what we require.
      *

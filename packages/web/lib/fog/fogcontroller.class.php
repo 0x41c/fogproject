@@ -401,25 +401,25 @@ abstract class FOGController extends FOGBase
                 $paramInsert = sprintf(':%s_insert', $column);
                 $val = $this->get($key);
                 switch ($key) {
-                case 'createdBy':
-                    if (!$val) {
-                        if (self::$FOGUser->isValid()) {
-                            $val = trim(self::$FOGUser->get('name'));
-                        } else {
-                            $val = 'fog';
+                    case 'createdBy':
+                        if (!$val) {
+                            if (self::$FOGUser->isValid()) {
+                                $val = trim(self::$FOGUser->get('name'));
+                            } else {
+                                $val = 'fog';
+                            }
                         }
-                    }
-                    break;
-                case 'createdTime':
-                    if (!($val && self::validDate($val))) {
-                        $val = self::formatTime('now', 'Y-m-d H:i:s');
-                    }
-                    break;
-                case 'id':
-                    if (!(is_numeric($val) && $val > 0)) {
-                        continue 2;
-                    }
-                    break;
+                        break;
+                    case 'createdTime':
+                        if (!($val && self::validDate($val))) {
+                            $val = self::formatTime('now', 'Y-m-d H:i:s');
+                        }
+                        break;
+                    case 'id':
+                        if (!(is_numeric($val) && $val > 0)) {
+                            continue 2;
+                        }
+                        break;
                 }
                 if (is_null($val)) {
                     $val = '';
@@ -840,18 +840,18 @@ abstract class FOGController extends FOGBase
             return $this;
         }
         switch ($array_type) {
-        case 'merge':
-            foreach ((array)$array as &$a) {
-                $this->add($key, $a);
-                unset($a);
-            }
-            break;
-        case 'diff':
-            foreach ((array)$array as &$a) {
-                $this->remove($key, $a);
-                unset($a);
-            }
-            break;
+            case 'merge':
+                foreach ((array)$array as &$a) {
+                    $this->add($key, $a);
+                    unset($a);
+                }
+                break;
+            case 'diff':
+                foreach ((array)$array as &$a) {
+                    $this->remove($key, $a);
+                    unset($a);
+                }
+                break;
         }
         return $this;
     }

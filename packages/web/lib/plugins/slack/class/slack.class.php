@@ -1,4 +1,5 @@
 <?php
+
 class Slack extends FOGController
 {
     protected $databaseTable = 'slack';

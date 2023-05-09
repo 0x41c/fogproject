@@ -11,29 +11,29 @@ Find some detailed information on how the FOG project is structured and how to c
 [Just allow me one question](#just-allow-ne-one-question)
 
 [Before you get started](#before-you-get-started)
-  * [Repos, languages and foo](#repos-languages-and-foo)
-  * [Versions and branches](#versions-and-branches)
+
+- [Repos, languages and foo](#repos-languages-and-foo)
+- [Versions and branches](#versions-and-branches)
 
 [How to contribute?](#how-to-contribute)
-  * [Reporting Bugs](#reporting-bugs)
-  * [Suggesting Enhancements](#suggesting-enhancements)
-  * [Your First Code Contribution](#your-first-code-contribution)
-  * [Pull Requests](#pull-requests)
+
+- [Reporting Bugs](#reporting-bugs)
+- [Suggesting Enhancements](#suggesting-enhancements)
+- [Your First Code Contribution](#your-first-code-contribution)
+- [Pull Requests](#pull-requests)
 
 [Styleguides](#styleguides)
-  * [Git Commit Messages](#git-commit-messages)
-  * [JavaScript Styleguide](#javascript-styleguide)
-  * [CoffeeScript Styleguide](#coffeescript-styleguide)
-  * [Specs Styleguide](#specs-styleguide)
-  * [Documentation Styleguide](#documentation-styleguide)
+
+- [Git Commit Messages](#git-commit-messages)
+- [JavaScript Styleguide](#javascript-styleguide)
+- [CoffeeScript Styleguide](#coffeescript-styleguide)
+- [Specs Styleguide](#specs-styleguide)
+- [Documentation Styleguide](#documentation-styleguide)
 
 [Additional Notes](#additional-notes)
-  * [Issue and Pull Request Labels](#issue-and-pull-request-labels)
-  * [Attribution](#attribution)
 
-
-
-
+- [Issue and Pull Request Labels](#issue-and-pull-request-labels)
+- [Attribution](#attribution)
 
 ## Code of Conduct
 
@@ -56,23 +56,23 @@ diverse, inclusive, and healthy community.
 Examples of behavior that contributes to a positive environment for our
 community include:
 
-* Demonstrating empathy and kindness toward other people
-* Being respectful of differing opinions, viewpoints, and experiences
-* Giving and gracefully accepting constructive feedback
-* Accepting responsibility and apologizing to those affected by our mistakes,
+- Demonstrating empathy and kindness toward other people
+- Being respectful of differing opinions, viewpoints, and experiences
+- Giving and gracefully accepting constructive feedback
+- Accepting responsibility and apologizing to those affected by our mistakes,
   and learning from the experience
-* Focusing on what is best not just for us as individuals, but for the overall
+- Focusing on what is best not just for us as individuals, but for the overall
   community
 
 Examples of unacceptable behavior include:
 
-* The use of sexualized language or imagery, and sexual attention or advances of
+- The use of sexualized language or imagery, and sexual attention or advances of
   any kind
-* Trolling, insulting or derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or email address,
+- Trolling, insulting or derogatory comments, and personal or political attacks
+- Public or private harassment
+- Publishing others' private information, such as a physical or email address,
   without their explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
+- Other conduct which could reasonably be considered inappropriate in a
   professional setting
 
 ### Enforcement Responsibilities
@@ -162,25 +162,19 @@ For answers to common questions about this code of conduct, see the FAQ at
 [https://www.contributor-covenant.org/translations][translations].
 
 [homepage]: https://www.contributor-covenant.org
-</details>
 
+</details>
 
 ### Reporting Bugs
 
- - https://github.com/FOGProject/fogproject/issues
- - https://forums.fogproject.org/category/17/bug-reports
-
-
-
+- https://github.com/FOGProject/fogproject/issues
+- https://forums.fogproject.org/category/17/bug-reports
 
 ## Pull Requests
 
 1. Always create a pull request towards the latest development version. Currently this is `dev-branch`.
 
 2. Increase the version number in [system.class.php](https://github.com/FOGProject/fogproject/blob/10950be7694313df66409e459658e2a1d5e52d10/packages/web/lib/fog/system.class.php#L56) to the new version that this pull request would represent. The versioning scheme we use is [SemVer](https://semver.org/).
-
-
-
 
 ## Attribution
 

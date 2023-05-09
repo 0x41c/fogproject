@@ -20,4 +20,4 @@
  * @link     https://fogproject.org
  */
 require '../commons/base.inc.php';
-new Route;
+new Route();

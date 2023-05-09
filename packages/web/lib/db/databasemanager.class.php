@@ -53,7 +53,7 @@ class DatabaseManager extends FOGCore
          * return immediately.
          */
         if (self::$DB) {
-            return new self;
+            return new self();
         }
         /**
          * Establish connection.
@@ -95,7 +95,7 @@ class DatabaseManager extends FOGCore
          * installed version, return immediately.
          */
         if (self::$mySchema >= FOG_SCHEMA) {
-            return new self;
+            return new self();
         }
         /**
          * The sub get caller.
@@ -165,7 +165,7 @@ class DatabaseManager extends FOGCore
                 die('#!db');
             }
         }
-        return new self;
+        return new self();
     }
     /**
      * Returns the DB Link object

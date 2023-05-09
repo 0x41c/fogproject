@@ -1,4 +1,5 @@
 <?php
+
 class SlackHandler extends Slack
 {
     private $_apiToken;
