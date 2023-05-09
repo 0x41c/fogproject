@@ -1,0 +1,13 @@
+version = 1
+
+[[analyzers]]
+name = "javascript"
+
+[[analyzers]]
+name = "php"
+
+[[transformers]]
+name = "prettier"
+
+[[transformers]]
+name = "php-cs-fixer"
