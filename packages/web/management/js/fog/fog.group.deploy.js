@@ -1,3 +1,3 @@
-(function($) {
-    DeployStuff();
+(function ($) {
+  DeployStuff();
 })(jQuery);

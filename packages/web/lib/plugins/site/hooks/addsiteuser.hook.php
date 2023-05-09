@@ -315,7 +315,7 @@ class AddSiteUser extends Hook
         self::getClass('SiteUserRestriction')
             ->set('userID', $arguments['User']->get('id'))
             ->load('userID')
-            ->set('isRestricted', isset($_REQUEST['isRestricted'])?1:0)
+            ->set('isRestricted', isset($_REQUEST['isRestricted']) ? 1 : 0)
             ->save();
     }
     /**

@@ -378,7 +378,7 @@ class FOGPageManager extends FOGBase
                 return;
             }
             unset($vals);
-            $class = new $className;
+            $class = new $className();
             $this->_nodes[$this->classValue] = $class;
             $this->_register($class);
             unset($class);

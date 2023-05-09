@@ -30,18 +30,17 @@
  */
 class Mysqldump
 {
-
     // Same as mysqldump
-    const MAXLINESIZE = 1000000;
+    public const MAXLINESIZE = 1000000;
 
     // Available compression methods as constants
-    const GZIP = 'Gzip';
-    const BZIP2 = 'Bzip2';
-    const NONE = 'None';
+    public const GZIP = 'Gzip';
+    public const BZIP2 = 'Bzip2';
+    public const NONE = 'None';
 
     // Available connection strings
-    const UTF8 = 'utf8';
-    const UTF8MB4 = 'utf8mb4';
+    public const UTF8 = 'utf8';
+    public const UTF8MB4 = 'utf8mb4';
 
     /**
     * Database username
@@ -988,7 +987,7 @@ abstract class CompressManagerFactory
 
         $method =  __NAMESPACE__ . "\\" . "Compress" . $c;
 
-        return new $method;
+        return new $method();
     }
 }
 

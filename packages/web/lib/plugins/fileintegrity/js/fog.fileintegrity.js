@@ -1,3 +1,3 @@
-$(function() {
-    checkboxToggleSearchListPages();
+$(function () {
+  checkboxToggleSearchListPages();
 });

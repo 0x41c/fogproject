@@ -1,4 +1,5 @@
 <?php
+
 class MySQL extends DatabaseManager
 {
     private static $link;

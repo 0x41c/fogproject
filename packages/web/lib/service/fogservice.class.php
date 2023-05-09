@@ -250,8 +250,8 @@ abstract class FOGService extends FOGBase
     protected static function wlog($string, $path)
     {
         if (file_exists($path)) {
-            $filesize = (double)self::getFilesize($path);
-            $max_size = (double)self::getSetting('SERVICE_LOG_SIZE');
+            $filesize = (float)self::getFilesize($path);
+            $max_size = (float)self::getSetting('SERVICE_LOG_SIZE');
             if (!$max_size) {
                 $max_size = 500000;
             }

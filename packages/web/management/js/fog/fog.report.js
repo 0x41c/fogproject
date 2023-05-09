@@ -1,3 +1,6 @@
-(function($) {
-    checkboxAssociations('.toggle-checkboxAction:checkbox','.toggle-action:checkbox');
+(function ($) {
+  checkboxAssociations(
+    ".toggle-checkboxAction:checkbox",
+    ".toggle-action:checkbox"
+  );
 })(jQuery);

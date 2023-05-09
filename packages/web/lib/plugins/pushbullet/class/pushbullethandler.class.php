@@ -25,21 +25,21 @@ class PushbulletHandler extends Pushbullet
 {
     private $_apiKey;
     private $_curlCallback;
-    const URL_PUSHES
+    public const URL_PUSHES
         = 'https://api.pushbullet.com/v2/pushes';
-    const URL_DEVICES
+    public const URL_DEVICES
         = 'https://api.pushbullet.com/v2/devices';
-    const URL_CONTACTS
+    public const URL_CONTACTS
         = 'https://api.pushbullet.com/v2/contacts';
-    const URL_UPLOAD_REQUEST
+    public const URL_UPLOAD_REQUEST
         = 'https://api.pushbullet.com/v2/upload-request';
-    const URL_USERS
+    public const URL_USERS
         = 'https://api.pushbullet.com/v2/users';
-    const URL_SUBSCRIPTIONS
+    public const URL_SUBSCRIPTIONS
         = 'https://api.pushbullet.com/v2/subscriptions';
-    const URL_CHANNEL_INFO
+    public const URL_CHANNEL_INFO
         = 'https://api.pushbullet.com/v2/channel-info';
-    const URL_EPHEMERALS
+    public const URL_EPHEMERALS
         = 'https://api.pushbullet.com/v2/ephemerals';
     /**
      * Pushbullet constructor.

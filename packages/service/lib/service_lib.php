@@ -55,7 +55,7 @@ function Service_Log_message($logpath, $name, $msg)
     fflush($logfile);
     fclose($logfile);
 }
-declare (ticks = 1);
+declare (ticks=1);
 /**
  * Signal handler
  *
